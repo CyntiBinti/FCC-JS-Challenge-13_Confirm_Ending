@@ -1,5 +1,5 @@
 function confirmEnding(str, target) {
-  let regex = /target$/gi;
+  let regex = new RegExp (target + '$', 'i');
   let result = regex.test(str);
   return result;
 }
